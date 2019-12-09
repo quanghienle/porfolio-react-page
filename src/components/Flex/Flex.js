@@ -3,7 +3,7 @@ import './Flex.css'
 
 class Flex extends Component {
     render(){
-        const { direction, wrap, justifyContent, style, children } = this.props;
+        const { direction, wrap, justifyContent, style = {}, children } = this.props;
         style.flexDirection = direction;
         style.flexWrap = wrap;
         style.justifyContent = justifyContent;
