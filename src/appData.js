@@ -53,18 +53,18 @@ let appData = {
         "Achievements": [1, 2]
       }
     ],
-    "skillsDescription":"Your skills here",
+    "skillsDescription":"*doing literally nothing*",
     "skills":[
       {
         "skillname":"Java",
           "level": "80%"
       },
       {
-        "skillname":"JavaScript/HTML/CSS",
+        "skillname":"JavaScript / HTML / CSS",
           "level": "80%"
       },
         {
-            "skillname":"Clojure/ClojureScript",
+            "skillname":"Clojure / ClojureScript",
             "level": "75%"
         },
       {

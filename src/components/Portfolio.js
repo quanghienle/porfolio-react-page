@@ -24,7 +24,7 @@ export default class Porfolio extends Component {
                     let skillId = "skill" + index;
                     return(
                         <li key={skillId}>
-                          <span className={`bar-expand ${item.skillname.toLowerCase()}`} style={{paddingRight: item.level}}>
+                          <span className="bar-expand" style={{paddingRight: item.level}}>
 
                           </span><em>{item.skillname}</em>
                         </li>
