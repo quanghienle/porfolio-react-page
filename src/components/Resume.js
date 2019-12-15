@@ -15,6 +15,10 @@ export default  class Resume extends Component {
               {
                 appData.education && appData.education.map((item, index)=>{
                     let eduId = "education" + index;
+                    let achievements = item.Achievements && item.Achievements.map((item, index) => {
+                        let key = "achievement-" + index;
+                        return(<p key={key}> &bull; {item}</p>)
+                    });
                     return(
                         <div className="row item" key={eduId}>
                             <div className="twelve columns">
@@ -24,7 +28,7 @@ export default  class Resume extends Component {
                                     <span>&bull;</span>
                                     <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em>
                                 </p>
-                                <p>{item.Achievements}</p>
+                                {achievements}
                             </div>
                         </div>
                     )})
@@ -40,16 +44,19 @@ export default  class Resume extends Component {
               {
                 appData.work && appData.work.map((item, index) => {
                     let workId = "work" + index;
+                    let achievements = item.Achievements && item.Achievements.map((item, index) => {
+                        let key = "achievement-" + index;
+                        return(<p key={key}> &bull; {item}</p>)
+                    });
                   return(
                     <div className="row item" key={workId}>
                        <div className="twelve columns">
                           <h3>{item.CompanyName}</h3>
                           <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.startDate} -  {item.endDate}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
+                              {item.specialization}
+                              <span>&bull;</span>
+                              <em className="date">{item.startDate} - {item.endDate}</em></p>
+                           {achievements}
                        </div>
 
                     </div>
@@ -61,40 +68,7 @@ export default  class Resume extends Component {
          </div>
 
 
-         <div className="row skill">
 
-            <div className="three columns header-col">
-               <h1><span>Skills</span></h1>
-            </div>
-
-            <div className="nine columns main-col">
-
-               <p>
-               {appData.skillsDescription}
-               </p>
-
-   				<div className="bars">
-
-   				   <ul className="skills">
-                {
-                  appData.skills && appData.skills.map((item, index) => {
-                      let skillId = "skill" + index;
-                    return(
-                      <li key={skillId}>
-                      <span className={`bar-expand ${item.skillname.toLowerCase()}`}>
-                      </span><em>{item.skillname}</em>
-                      </li>
-                    )
-                  })
-                }
-
-   					</ul>
-
-   				</div>
-
-   			</div>
-
-         </div>
 
       </section>
     );

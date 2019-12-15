@@ -3,8 +3,8 @@ let appData = {
     "greetingMessage": "Hi! I'm Hien Le",
     "profilePicture": "images/profile-photo.jpg",
     "role": "Software Developer",
-    "linkedinId":"Your LinkedIn Id",
-    "skypeid": "Your skypeid",
+    "linkedinId":"dont have linkedin account yet",
+    "skypeid": "skype?",
     "roleDescription": " I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
     "socialLinks":[
         {
@@ -34,7 +34,7 @@ let appData = {
         "specialization": "Computer Science - Software Engineering",
         "MonthOfPassing": "August",
         "YearOfPassing": "2021",
-        "Achievements": "Dean's List"
+        "Achievements": [1, 2]
       }
     ],
     "work":[
@@ -43,26 +43,33 @@ let appData = {
             "specialization":"Teaching Assistant",
             "startDate":"Jan 2020",
             "endDate":"Current",
-            "Achievements":"Some Achievements"
+            "Achievements": [1, 2]
         },
       {
         "CompanyName":"Ericsson",
         "specialization":"Software Developer Co-op",
         "startDate":"May 2019",
         "endDate":"December 2019",
-        "Achievements":"Some Achievements"
+        "Achievements": [1, 2]
       }
     ],
     "skillsDescription":"Your skills here",
     "skills":[
       {
-        "skillname":"HTML5"
+        "skillname":"Java",
+          "level": "80%"
       },
       {
-        "skillname":"CSS"
+        "skillname":"JavaScript/HTML/CSS",
+          "level": "80%"
       },
+        {
+            "skillname":"Clojure/ClojureScript",
+            "level": "75%"
+        },
       {
-        "skillname":"Reactjs"
+        "skillname":"C/C++",
+          "level": "50%"
       }
     ],
     "portfolio":[
