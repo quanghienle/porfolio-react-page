@@ -186,7 +186,8 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
+    text-align: center;
+   background: rgba(123, 122, 132, 0.85);
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -215,7 +216,10 @@ ul#nav li.current a { color: #F06000; }
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
+#about .main-col {
+    background-color: #2B2B2B;
+    border: 2px solid beige;
+    border-radius: 5px;}
 #about .download .button {
    margin-top: 6px;
    background: #444;

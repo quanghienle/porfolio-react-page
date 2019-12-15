@@ -221,7 +221,10 @@
       text-align: center;
       padding: 15px 20px;
    }
-   #about .main-col { padding-right: 30px; }
+   #about .main-col {
+      background-color: #2B2B2B;
+      border: 2px solid beige;
+      border-radius: 5px;}
 
 
    /* Resume Section

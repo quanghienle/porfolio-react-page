@@ -21,8 +21,20 @@ let appData = {
             "className": "fa fa-twitter"
         }
     ],
-    "aboutme": "I am currently in my final year studying Computer Science at Carleton University. " +
-        "I am a self taught Full Stack Web Developer, currently diving deeper into Web Development and Machine Learning. ",
+    "about": [
+        {"question": "HienLe.origin",
+            "answer": "\"Cantho, Vietnam\""},
+        {"question": "HienLe.education",
+        "answer": "\"Carleton University\""},
+        {"question": "HienLe.major",
+            "answer": "\"Computer Science - Software Engineering Stream\""},
+        {"question": "HienLe.expectedGraduation",
+            "answer": "\"August 2021\""},
+        {"question": "HienLe.email",
+            "answer": "\"hienle@cmail.carleton.ca\'"},
+        {"question": "HienLe.interests",
+            "answer": "[\"Code\", \"Badminton\", \"Guitar\", \"Movies\"]"},
+    ],
 
     "address": "Ottawa, Ontario, Canada ",
     "website": "https://hienle.me",
