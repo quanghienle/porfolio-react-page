@@ -13,5 +13,4 @@ Builds the app for production to the `build` folder.<br />
 
 ### `npm run deploy`
 
-Deploys the app to personal github page 
-
+Deploys the app to personal github page
